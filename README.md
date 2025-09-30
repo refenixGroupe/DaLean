@@ -1,88 +1,82 @@
-# Getting Started with Create React App
-npm install -D tailwindcss postcss autoprefixer
+# Data Cleaning Web App
 
-npx tailwindcss init -p
-npx tailwindcss@latest init -p
-npm install -D @tailwindcss/postcss
+A React-based web app for cleaning and exploring messy datasets. Upload your files (CSV, Excel), preview them, and apply quick transformations before exporting clean data.
+
+---
+
+## 🚀 Getting Started
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Development server
+
+```bash
+npm start
+```
+
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000).
+The page reloads automatically when you make changes.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+Creates an optimized production build in the `/build` folder.
+
+---
+
+## 🛠️ Tech Stack
+
+* **React** – Frontend framework
+* **TailwindCSS** – Styling
+* **PapaParse** – CSV parsing
+* **xlsx** – Excel parsing/exporting
+* **React Data Grid** – Data table handling
+* **Lodash** – Utilities for transformations
+
+---
+
+## ⚙️ Features
+
+* Upload CSV or Excel files
+* Preview data in an interactive grid
+* Handle missing values (drop, fill with mean/median/mode, etc.)
+* Basic transformations (filtering, sorting, deduplication)
+* Export cleaned dataset
+
+---
+
+## 📦 Installation Notes
+
+If Tailwind/PostCSS setup breaks, reinstall specific versions:
+
+```bash
 npm uninstall tailwindcss postcss autoprefixer
 npm install -D tailwindcss@3.4.14 postcss autoprefixer
-npm install papaparse xlsx
-npm install react-data-grid lodash
+```
 
+---
 
+## 🔮 Roadmap
 
+* Advanced cleaning (outlier detection, normalization)
+* AI-assisted data quality suggestions
+* Multi-file handling and merging
 
+---
 
+## 🤝 Contributing
 
+Pull requests are welcome. Open an issue for feature requests or bugs.
 
+---
 
+## 📄 License
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License

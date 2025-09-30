@@ -19,6 +19,7 @@ function App() {
         <KeyboardShortcutsProvider>
           <main className="App container mx-auto w-full min-h-screen relative">
             <Routes>
+              <Route path="/DaLean" element={<Home />} />
               <Route path="/" element={<Home />} />
               <Route path="/upload" element={<Upload />} />
               <Route path="/preview" element={<Preview />} />
