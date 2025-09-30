@@ -1,0 +1,49 @@
+{
+  "short_name": "DaLean",
+  "name": "DaLean - Smart Data Cleaning Platform",
+  "description": "Professional data cleaning and quality assessment platform with AI-powered insights for Algerian data formats",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#2563eb",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "categories": ["productivity", "business", "utilities"],
+  "lang": "en",
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "Upload Data",
+      "short_name": "Upload",
+      "description": "Upload a new dataset for cleaning",
+      "url": "/upload",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Data Quality Demo",
+      "short_name": "Quality",
+      "description": "Test data quality assessment",
+      "url": "/data-quality-demo",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.svg" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta
+      name="description"
+      content="DaLean - Smart Data Cleaning Platform with AI-powered insights for Algerian data formats. Clean, validate, and standardize your data efficiently."
+    />
+
+    <!-- PWA Meta Tags -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- iOS PWA Support -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="DaLean" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/logo512.png" />
+
+    <!-- Windows PWA Support -->
+    <meta name="msapplication-TileImage" content="%PUBLIC_URL%/logo192.png" />
+    <meta name="msapplication-TileColor" content="#2563eb" />
+
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="DaLean - Smart Data Cleaning Platform" />
+    <meta
+      property="og:description"
+      content="Professional data cleaning and quality assessment platform with AI-powered insights"
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
+    <meta property="og:type" content="website" />
+
+    <title>DaLean - Smart Data Cleaning Platform</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run DaLean app.</noscript>
+    <div id="root"></div>
+
+    <!-- Service Worker Registration -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then((registration) => {
+              console.log(
+                "DaLean SW registered successfully:",
+                registration.scope
+              );
+
+              // Check for updates
+              registration.addEventListener("updatefound", () => {
+                const newWorker = registration.installing;
+                newWorker.addEventListener("statechange", () => {
+                  if (
+                    newWorker.state === "installed" &&
+                    navigator.serviceWorker.controller
+                  ) {
+                    console.log(
+                      "DaLean: New content available, refresh to update."
+                    );
+                  }
+                });
+              });
+            })
+            .catch((registrationError) => {
+              console.log("DaLean SW registration failed:", registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
